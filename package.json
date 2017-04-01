@@ -55,6 +55,13 @@
       "path": "./node_modules/cz-conventional-changelog"
     }
   },
+  "nyc": {
+    "check-coverage": true,
+    "statements": 100,
+    "functions": 100,
+    "branches": 100,
+    "lines": 100
+  },
   "verb": {
     "run": true,
     "toc": {
@@ -68,21 +75,35 @@
     ],
     "related": {
       "list": [
-        "always-done",
-        "minibase",
-        "try-catch-core"
+        "dush",
+        "dush-router",
+        "dush-no-chaining",
+        "native-promise",
+        "native-or-another",
+        "native-promise-deferred",
+        "dush-tap-report",
+        "dush-methods",
+        "minibase"
       ],
-      "highlight": "always-done"
+      "highlight": "dush"
     },
+    "reflinks": [
+      "always-done",
+      "async-done",
+      "base",
+      "charlike",
+      "commitizen",
+      "dezalgo",
+      "dush",
+      "native-promise-deferred",
+      "once",
+      "standard-version",
+      "type",
+      "verb",
+      "verb-generate-readme"
+    ],
     "lint": {
       "reflinks": true
     }
-  },
-  "nyc": {
-    "check-coverage": true,
-    "statements": 100,
-    "functions": 100,
-    "branches": 100,
-    "lines": 100
   }
 }
