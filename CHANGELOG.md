@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.0.1"></a>
+## [1.0.1](https://github.com/tunnckocore/dush-promise/compare/v1.0.0...v1.0.1) (2017-04-01)
+
+
+### Bug Fixes
+
+* **package:** deps ([e449ba8](https://github.com/tunnckocore/dush-promise/commit/e449ba8))
+
+
+
 <a name="1.0.0"></a>
 # 1.0.0 (2017-04-01)
 
