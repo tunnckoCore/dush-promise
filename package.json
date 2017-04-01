@@ -20,6 +20,7 @@
     "commit": "npm-run-all -s test git"
   },
   "dependencies": {
+    "extend-shallow": "^2.0.1",
     "native-promise-deferred": "^1.0.0"
   },
   "devDependencies": {

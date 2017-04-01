@@ -7,6 +7,7 @@
 
 'use strict'
 
+var extend = require('extend-shallow')
 var Deferred = require('native-promise-deferred')
 
 /**
@@ -36,7 +37,7 @@ var Deferred = require('native-promise-deferred')
 
 module.exports = function dushPromise (opts) {
   return function dushPromise_ (app) {
-    var promise = Deferred(opts)
+    var promise = Deferred(extend({}, app.options, opts))
 
     /**
      * > Handle resolved promise with `onresolved` or rejected promise
@@ -64,7 +65,7 @@ module.exports = function dushPromise (opts) {
      * @api public
      */
 
-    app.then = function (onresolved, onrejected) {
+    app.then = function then (onresolved, onrejected) {
       return promise.then(onresolved, onrejected)
     }
 
@@ -91,7 +92,7 @@ module.exports = function dushPromise (opts) {
      * @api public
      */
 
-    app.catch = function (onrejected) {
+    app.catch = function catch_ (onrejected) {
       return promise.catch(onrejected)
     }
 
@@ -141,11 +142,11 @@ module.exports = function dushPromise (opts) {
      * @api public
      */
 
-    app.reject = function (err) {
+    app.reject = function reject (err) {
       return promise.reject(err)
     }
 
-    app.catch(function (er) {
+    app.catch(function onRejected (er) {
       app.emit('error', er)
     })
 
