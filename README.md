@@ -94,7 +94,7 @@ const dushPromise = require('dush-promise')
 
 ## API
 
-### [dushPromise](index.js#L37)
+### [dushPromise](index.js#L38)
 > Adds a Promise methods such as `.resolve`, `.reject` `.then` and `.catch` to your [dush][] application. Useful from inside plugins. This plugin also emits `error` event when `app.reject` is used.
 
 **Params**
@@ -116,7 +116,7 @@ console.log(app.reject)
 console.log(app.resolve)
 ```
 
-### [.then](index.js#L67)
+### [.then](index.js#L68)
 > Handle resolved promise with `onresolved` or rejected promise with `onrejected`. It is as any usual Promise `.then` method.
 
 **Params**
@@ -140,7 +140,7 @@ app.then(null, (er) => {
 app.reject(new Error('foo bar'))
 ```
 
-### [.catch](index.js#L94)
+### [.catch](index.js#L95)
 > Catch a rejected promise error. This method is mirror of any usual promise `.catch` method.
 
 **Params**
@@ -161,7 +161,7 @@ app.catch((err) => {
 app.reject(new Error('sad err'))
 ```
 
-### [.resolve](index.js#L122)
+### [.resolve](index.js#L123)
 > As any usual `Promise.resolve` method.
 
 **Params**
@@ -184,7 +184,7 @@ promise.then((val) => {
 })
 ```
 
-### [.reject](index.js#L144)
+### [.reject](index.js#L145)
 > As any usual `Promise.reject` method.
 
 **Params**
@@ -204,9 +204,11 @@ app.reject(new Error('quxie'))
 ## Related
 - [dush-methods](https://www.npmjs.com/package/dush-methods): Plugin for `dush` and anything based on it. It adds helper `.define` and `.delegate` methods | [homepage](https://github.com/tunnckocore/dush-methods#readme "Plugin for `dush` and anything based on it. It adds helper `.define` and `.delegate` methods")
 - [dush-no-chaining](https://www.npmjs.com/package/dush-no-chaining): A plugin that removes the emitter methods chaining support for `dush`, `base`, `minibase` or anything based on them | [homepage](https://github.com/tunnckocore/dush-no-chaining#readme "A plugin that removes the emitter methods chaining support for `dush`, `base`, `minibase` or anything based on them")
+- [dush-options](https://www.npmjs.com/package/dush-options): Adds `.option`, `.enable` and `.disable` methods to your `dush` application | [homepage](https://github.com/tunnckocore/dush-options#readme "Adds `.option`, `.enable` and `.disable` methods to your `dush` application")
 - [dush-router](https://www.npmjs.com/package/dush-router): A simple regex-based router for `dush`, `base`, `minibase` and anything based on them. Works on Browser and Node.js | [homepage](https://github.com/tunnckocore/dush-router#readme "A simple regex-based router for `dush`, `base`, `minibase` and anything based on them. Works on Browser and Node.js")
 - [dush-tap-report](https://www.npmjs.com/package/dush-tap-report): A simple TAP report producer based on event system. A plugin for `dush` event emitter or anything based on it | [homepage](https://github.com/tunnckocore/dush-tap-report#readme "A simple TAP report producer based on event system. A plugin for `dush` event emitter or anything based on it")
 - [dush](https://www.npmjs.com/package/dush): Microscopic & functional event emitter in ~260 bytes, extensible through plugins. | [homepage](https://github.com/tunnckocore/dush#readme "Microscopic & functional event emitter in ~260 bytes, extensible through plugins.")
+- [minibase-create-plugin](https://www.npmjs.com/package/minibase-create-plugin): Utility for [minibase][] and [base][] that helps you create plugins | [homepage](https://github.com/node-minibase/minibase-create-plugin#readme "Utility for [minibase][] and [base][] that helps you create plugins")
 - [minibase](https://www.npmjs.com/package/minibase): Minimalist alternative for Base. Build complex APIs with small units called plugins. Works well with most of the already existing… [more](https://github.com/node-minibase/minibase#readme) | [homepage](https://github.com/node-minibase/minibase#readme "Minimalist alternative for Base. Build complex APIs with small units called plugins. Works well with most of the already existing [base][] plugins.")
 - [native-or-another](https://www.npmjs.com/package/native-or-another): Guaranteed way for getting a Promise. Always native Promise if available, otherwise looks for common promise libraries and loads which… [more](https://github.com/tunnckocore/native-or-another#readme) | [homepage](https://github.com/tunnckocore/native-or-another#readme "Guaranteed way for getting a Promise. Always native Promise if available, otherwise looks for common promise libraries and loads which is installed. Allows registering custom Promise implementation in node < 0.12 versions")
 - [native-promise-deferred](https://www.npmjs.com/package/native-promise-deferred): A deferred Promise, using `native-or-another` behind and so it work on Node.js v0.10 too! | [homepage](https://github.com/tunnckocore/native-promise-deferred#readme "A deferred Promise, using `native-or-another` behind and so it work on Node.js v0.10 too!")
@@ -295,7 +297,7 @@ _Project scaffolded using [charlike][] cli._
 [daviddm-devdeps-url]: https://david-dm.org/tunnckoCore/dush-promise?type=dev
 [daviddm-devdeps-img]: https://img.shields.io/david/dev/tunnckoCore/dush-promise.svg
 
-[ghtag-url]: https://github.com/tunnckoCore/dush-promise/releases/tag/v0.1.0
+[ghtag-url]: https://github.com/tunnckoCore/dush-promise/releases/tag/v1.0.1
 [ghtag-img]: https://img.shields.io/github/tag/tunnckoCore/dush-promise.svg?label=github%20tag
 
 [npmv-url]: https://www.npmjs.com/package/dush-promise
@@ -347,3 +349,4 @@ _Project scaffolded using [charlike][] cli._
 [contributing-url]: https://github.com/tunnckoCore/dush-promise/blob/master/CONTRIBUTING.md
 [absolute-coverage-url]: https://github.com/tunnckoCore/dush-promise/blob/master/package.json
 
+[minibase]: https://github.com/node-minibase/minibase

@@ -85,7 +85,9 @@
         "native-promise-deferred",
         "dush-tap-report",
         "dush-methods",
-        "minibase"
+        "minibase",
+        "dush-options",
+        "minibase-create-plugin"
       ],
       "highlight": "dush"
     },
