@@ -1,6 +1,6 @@
 {
   "name": "dush-promise",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Plugin for `dush` that makes it a Deferred promise and adds `.resolve`, `.reject`, `.than` and `.catch` methods for more better error handling experience",
   "repository": "tunnckoCore/dush-promise",
   "author": "Charlike Mike Reagent <@tunnckoCore> (https://i.am.charlike.online)",
