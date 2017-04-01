@@ -36,7 +36,20 @@
   "files": [
     "index.js"
   ],
-  "keywords": [],
+  "keywords": [
+    "baseplugin",
+    "deferred",
+    "deferred-promise",
+    "dush",
+    "dushplugin",
+    "error",
+    "error-handling",
+    "handling",
+    "minibaseplugin",
+    "plugins",
+    "promise",
+    "promises"
+  ],
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
