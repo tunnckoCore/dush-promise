@@ -33,7 +33,7 @@
     "pinkie": "^2.0.4",
     "pre-commit": "^1.2.2",
     "standard": "^9.0.0",
-    "standard-version": "^4.0.0"
+    "standard-version": "^4.2.0"
   },
   "files": [
     "index.js"
